@@ -234,6 +234,10 @@ main .about p {
   line-height: 2rem;
 }
 
+.margin__whatsapp {
+  margin: 0 0 0 1rem;
+}
+
 footer {
   margin: 4rem 0 0 0;
   background: #050505;
