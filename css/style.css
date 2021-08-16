@@ -197,9 +197,11 @@ main img {
 }
 
 main .about {
-  width: 90%;
+  width: 100%;
+  padding: 1rem;
   margin: 6rem auto;
   text-align: left;
+  background: #fff;
 }
 
 main .about p {
