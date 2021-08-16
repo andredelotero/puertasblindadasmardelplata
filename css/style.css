@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #050505;
+}
+
+body {
+  max-width: 650px;
+  min-width: 320px;
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  overflow-x: hidden;
+  background: #fafafa;
+}
+
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 55px;
+}
+
+nav .logo {
+  width: 80%;
+  margin-top: 5px;
+  margin-left: -22px;
+}
+
+nav .menu {
+  width: 2rem;
+  margin-right: 1rem;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .menu::before,
+nav .menu::after,
+nav .menu p {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 3px;
+  background: #050505;
+  border-radius: 2px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+nav .menu::before {
+  top: 18px;
+}
+
+nav .menu::after {
+  bottom: 18px;
+}
+
+nav .menu:hover::before {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+}
+
+nav .menu:hover::after {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
+}
+
+nav .menu:hover p {
+  width: 0;
+}
+
+header {
+  margin: 2rem auto 0 auto;
+  padding: 4rem 1rem;
+  background: #ececec;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  line-height: 3rem;
+}
+
+header h1::before,
+header h1::after {
+  content: "";
+  position: absolute;
+  height: 2.4rem;
+  background: #ffd900;
+  z-index: -1;
+}
+
+header h1::before {
+  top: 0.3rem;
+  width: 21rem;
+}
+
+header h1::after {
+  bottom: 0.3rem;
+  left: 0;
+  width: 15rem;
+}
+
+header h2 {
+  margin-top: 1.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+header h3 {
+  margin-top: 0.4rem;
+  font-size: 1.2rem;
+}
+
+header .cta1 {
+  background-color: #2d19ff;
+  color: #fff;
+  margin-top: 25px;
+  display: inline-block;
+  padding: 8px 16px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+  border-radius: 0px;
+  border: 0;
+  -webkit-box-shadow: 4px 4px 0 #19ff85;
+          box-shadow: 4px 4px 0 #19ff85;
+}
+
+main {
+  margin-top: 4rem;
+}
+
+main article {
+  margin: 4rem 0.5rem;
+}
+
+main article p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 10px 0;
+}
+
+main article .destacado {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+main h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+main h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+main img {
+  width: 100%;
+  margin-top: 0.8rem;
+  -webkit-box-shadow: 2px 2px 4px #050505;
+          box-shadow: 2px 2px 4px #050505;
+}
+
+main .about {
+  width: 90%;
+  margin: 6rem auto;
+  text-align: left;
+}
+
+main .about p {
+  line-height: 2rem;
+}
+
+footer {
+  margin: 3rem 0 0 0;
+  background: #050505;
+  width: 100%;
+  padding: 0 2rem 3rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer ul {
+  margin: 1rem 0;
+}
+
+footer li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+footer .social img {
+  display: inline-block;
+  width: 2.5rem;
+  -webkit-clip-path: circle(40%);
+          clip-path: circle(40%);
+}
