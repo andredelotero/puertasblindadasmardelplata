@@ -39,9 +39,7 @@ nav {
 }
 
 nav .logo {
-  width: 80%;
-  margin-top: 5px;
-  margin-left: -22px;
+  width: 95%;
 }
 
 nav .menu {
@@ -97,7 +95,7 @@ nav .menu:hover p {
 }
 
 header {
-  margin: 2rem auto 0 auto;
+  margin: 0rem auto 0 auto;
   padding: 4rem 1rem;
   background: #ececec;
   width: 100%;
@@ -110,7 +108,7 @@ header h1 {
   font-weight: 600;
   position: relative;
   z-index: 1;
-  line-height: 3rem;
+  line-height: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,12 +127,12 @@ header h1::after {
 }
 
 header h1::before {
-  top: 0.3rem;
+  top: 0.5rem;
   width: 21rem;
 }
 
 header h1::after {
-  bottom: 0.3rem;
+  bottom: 0.5rem;
   width: 16rem;
 }
 
@@ -197,8 +195,8 @@ main h5 {
 main img {
   width: 100%;
   margin-top: 0.8rem;
-  -webkit-box-shadow: 2px 2px 4px #050505;
-          box-shadow: 2px 2px 4px #050505;
+  -webkit-box-shadow: 3px 3px 6px #050505;
+          box-shadow: 3px 3px 6px #050505;
 }
 
 main .about {
