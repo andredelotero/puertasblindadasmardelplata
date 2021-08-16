@@ -3,7 +3,7 @@
   padding: 0;
   text-decoration: none;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   outline: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -27,14 +27,14 @@ nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 55px;
 }
 
@@ -54,11 +54,11 @@ nav .menu {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav .menu::before,
@@ -84,12 +84,12 @@ nav .menu::after {
 
 nav .menu:hover::before {
   -webkit-transform: translateY(8px) rotate(45deg);
-  transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
 }
 
 nav .menu:hover::after {
   -webkit-transform: translateY(-8px) rotate(-45deg);
-  transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
 }
 
 nav .menu:hover p {
@@ -155,7 +155,7 @@ header .cta1 {
   border-radius: 0px;
   border: 0;
   -webkit-box-shadow: 4px 4px 0 #19ff85;
-  box-shadow: 4px 4px 0 #19ff85;
+          box-shadow: 4px 4px 0 #19ff85;
 }
 
 main {
@@ -193,7 +193,7 @@ main img {
   width: 100%;
   margin-top: 0.8rem;
   -webkit-box-shadow: 2px 2px 4px #050505;
-  box-shadow: 2px 2px 4px #050505;
+          box-shadow: 2px 2px 4px #050505;
 }
 
 main .about {
@@ -218,15 +218,16 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer ul {
   margin: 1rem 0;
+  text-align: center;
 }
 
 footer li {
@@ -240,5 +241,5 @@ footer .social img {
   display: inline-block;
   width: 2.5rem;
   -webkit-clip-path: circle(40%);
-  clip-path: circle(40%);
+          clip-path: circle(40%);
 }
