@@ -157,8 +157,31 @@ header h3 {
   font-weight: 500;
   border-radius: 0px;
   border: 0;
-  -webkit-box-shadow: 4px 4px 0 #19ff85;
-          box-shadow: 4px 4px 0 #19ff85;
+  -webkit-box-shadow: 4px 4px 0 #f79543;
+          box-shadow: 4px 4px 0 #f79543;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem auto;
+}
+
+.cta1 a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.logo__whatsapp {
+  margin-left: 1rem;
+  width: 1.5rem;
+  background-color: #fff;
+  -webkit-clip-path: circle(45%);
+          clip-path: circle(45%);
 }
 
 main {
@@ -202,7 +225,7 @@ main img {
 main .about {
   width: 100%;
   padding: 1rem;
-  margin: 4rem auto;
+  margin: 4rem auto 0 auto;
   text-align: center;
   background: #fff;
 }
@@ -212,7 +235,7 @@ main .about p {
 }
 
 footer {
-  margin: 3rem 0 0 0;
+  margin: 4rem 0 0 0;
   background: #050505;
   width: 100%;
   padding: 0 2rem 3rem 2rem;
