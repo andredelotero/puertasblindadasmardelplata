@@ -155,7 +155,7 @@ header h3 {
   padding: 8px 16px;
   text-align: center;
   font-weight: 500;
-  border-radius: 0px;
+  border-radius: 4px;
   border: 0;
   -webkit-box-shadow: 4px 4px 0 #f79543;
           box-shadow: 4px 4px 0 #f79543;
