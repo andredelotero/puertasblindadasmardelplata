@@ -15,17 +15,11 @@ html {
 }
 
 body {
-  max-width: 650px;
   min-width: 320px;
-  width: 100%;
+  max-width: 100%;
   margin: 2rem auto 0 auto;
   overflow-x: hidden;
   background: #fafafa;
-}
-
-.logo {
-  width: 95%;
-  max-width: 36rem;
 }
 
 nav {
@@ -40,9 +34,9 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 55px;
 }
 
@@ -106,6 +100,10 @@ header {
   text-align: center;
 }
 
+header .intro {
+  max-width: 550px;
+}
+
 header h1 {
   font-size: 2.2rem;
   margin: 0 auto;
@@ -153,6 +151,7 @@ header h3 {
 
 header .puerta__blindada {
   display: none;
+  max-width: 450px;
 }
 
 .cta1 {
@@ -320,18 +319,13 @@ footer .social img {
           clip-path: circle(40%);
 }
 
-@media (min-width: 651px) {
-  body {
-    max-width: 850px;
-    padding: 0 0.5rem;
-  }
+@media (min-width: 40rem) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -353,8 +347,15 @@ footer .social img {
   header .intro h1::before,
   header .intro h1::after {
     left: 0;
+    height: 40%;
+  }
+  header .intro h1::before {
+    top: 0.2rem;
     width: 105%;
-    height: 38%;
+  }
+  header .intro h1::after {
+    bottom: 0.4rem;
+    width: 75%;
   }
   header .intro .cta1 {
     margin-left: 0;
@@ -382,8 +383,7 @@ footer .social img {
 @media (min-width: 715px) {
   header .puerta__blindada {
     display: inline-block;
-    width: 35%;
-    height: auto;
+    max-width: 35%;
   }
 }
 
