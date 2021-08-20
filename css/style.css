@@ -40,6 +40,20 @@ nav {
   height: 55px;
 }
 
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+}
+
+nav .logo .strong {
+  font-weight: 700;
+}
+
 nav .menu {
   width: 2rem;
   margin-right: 1rem;
@@ -283,7 +297,7 @@ footer {
   margin: 4rem 0 0 0;
   background: #050505;
   width: 100%;
-  padding: 0 2rem 3rem 2rem;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,6 +310,18 @@ footer {
           align-items: center;
 }
 
+footer * {
+  color: #fff;
+}
+
+footer p {
+  font-weight: 400;
+}
+
+footer p .strong {
+  font-weight: 600;
+}
+
 footer ul {
   margin: 1rem 0;
   text-align: center;
@@ -303,7 +329,6 @@ footer ul {
 
 footer li {
   list-style: none;
-  color: #fff;
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
