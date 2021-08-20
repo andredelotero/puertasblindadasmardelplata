@@ -17,7 +17,7 @@ html {
 body {
   min-width: 320px;
   max-width: 100%;
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   overflow-x: hidden;
   background: #fafafa;
 }
@@ -37,7 +37,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 55px;
+  background: #fff;
 }
 
 nav .logo {
