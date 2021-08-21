@@ -199,7 +199,7 @@ main h5 {
 }
 
 main img {
-  width: 90%;
+  width: 100%;
   max-width: 490px;
   height: auto;
   margin-top: 0.8rem;
@@ -252,6 +252,7 @@ footer * {
 
 footer p {
   font-weight: 400;
+  font-size: 1.2rem;
   -webkit-text-decoration: 4px underline #f79543;
           text-decoration: 4px underline #f79543;
 }
@@ -267,7 +268,7 @@ footer ul {
 
 footer li {
   list-style: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6rem;
 }
 
@@ -277,7 +278,7 @@ footer .social {
 
 footer .social img {
   display: inline-block;
-  width: 2.2rem;
+  background: #050505;
   -webkit-clip-path: circle(40%);
           clip-path: circle(40%);
 }
@@ -286,6 +287,13 @@ footer .social img {
   header h1 {
     font-size: 7vw;
     line-height: 8vw;
+  }
+}
+
+@media (min-width: 97rem) {
+  header h1 {
+    font-size: 9rem;
+    line-height: 10rem;
   }
 }
 
@@ -303,5 +311,8 @@ footer .social img {
   .cta1:hover * {
     color: #050505;
     font-weight: 500;
+  }
+  footer ul li {
+    font-size: 1rem;
   }
 }
