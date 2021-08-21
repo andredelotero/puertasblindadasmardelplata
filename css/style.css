@@ -19,7 +19,6 @@ body {
   max-width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
-  background: #fafafa;
 }
 
 nav {
@@ -28,17 +27,12 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #fff;
 }
 
 nav .logo {
@@ -55,11 +49,9 @@ nav .logo .strong {
   font-weight: 700;
 }
 
-nav .menu {
-  width: 2rem;
-  margin-right: 1rem;
-  height: 100%;
-  position: relative;
+header {
+  margin: 0 auto;
+  padding: 4rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,90 +59,19 @@ nav .menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-nav .menu::before,
-nav .menu::after,
-nav .menu p {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 3px;
-  background: #050505;
-  border-radius: 2px;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-}
-
-nav .menu::before {
-  top: 18px;
-}
-
-nav .menu::after {
-  bottom: 18px;
-}
-
-nav .menu:hover::before {
-  -webkit-transform: translateY(8px) rotate(45deg);
-          transform: translateY(8px) rotate(45deg);
-}
-
-nav .menu:hover::after {
-  -webkit-transform: translateY(-8px) rotate(-45deg);
-          transform: translateY(-8px) rotate(-45deg);
-}
-
-nav .menu:hover p {
-  width: 0;
-}
-
-header {
-  margin: 0rem auto 0 auto;
-  padding: 4rem 1rem;
-  background: #ececec;
+  background: linear-gradient(150deg, #f5f5f5, #e0e0e0);
   width: 100%;
   text-align: center;
 }
 
 header h1 {
-  font-size: 2.2rem;
-  margin: 0 auto;
-  font-weight: 600;
-  position: relative;
-  z-index: 1;
-  line-height: 3.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header h1::before,
-header h1::after {
-  content: "";
-  position: absolute;
-  height: 2.4rem;
-  background: #ffd900;
-  z-index: -1;
-}
-
-header h1::before {
-  top: 0.5rem;
-  width: 21rem;
-}
-
-header h1::after {
-  bottom: 0.5rem;
-  width: 16rem;
+  font-size: 12vw;
+  line-height: 12.5vw;
+  font-weight: 800;
 }
 
 header h2 {
-  margin-top: 1.4rem;
+  margin-top: 1.5rem;
   font-size: 1.4rem;
   font-weight: 600;
 }
@@ -160,23 +81,21 @@ header h3 {
   font-size: 1.2rem;
 }
 
-header .puerta__blindada {
-  display: none;
-  max-width: 450px;
-}
-
 .cta1 {
-  background-color: #2d19ff;
+  background-color: #050505;
   color: #fff;
-  margin-top: 25px;
+  margin: 3rem auto 0 auto;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 1rem 2rem;
   text-align: center;
   font-weight: 500;
   border-radius: 4px;
   border: 0;
   -webkit-box-shadow: 4px 4px 0 #f79543;
           box-shadow: 4px 4px 0 #f79543;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,7 +105,6 @@ header .puerta__blindada {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem auto;
   position: relative;
   z-index: 1;
 }
@@ -196,49 +114,63 @@ header .puerta__blindada {
   font-weight: 500;
 }
 
-@-webkit-keyframes mover__whatsapp {
-  0% {
-    -webkit-transform: translateX(-6px);
-            transform: translateX(-6px);
-  }
-  50% {
-    -webkit-transform: translateX(6px);
-            transform: translateX(6px);
-  }
-  100% {
-    -webkit-transform: translateX(-6px);
-            transform: translateX(-6px);
-  }
+.intro {
+  margin-top: 0.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
-@keyframes mover__whatsapp {
-  0% {
-    -webkit-transform: translateX(-6px);
-            transform: translateX(-6px);
-  }
-  50% {
-    -webkit-transform: translateX(6px);
-            transform: translateX(6px);
-  }
-  100% {
-    -webkit-transform: translateX(-6px);
-            transform: translateX(-6px);
-  }
-}
-
-.logo__whatsapp {
-  margin-left: 1rem;
-  width: 1.5rem;
-  -webkit-animation: mover__whatsapp 4000ms linear infinite;
-          animation: mover__whatsapp 4000ms linear infinite;
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  max-width: 91rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main {
   margin-top: 4rem;
 }
 
+main .servicios {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 main article {
-  margin: 4rem 0.5rem;
+  margin: 2rem;
+  width: 90%;
+  max-width: 32rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main article p {
@@ -267,8 +199,9 @@ main h5 {
 }
 
 main img {
-  width: 100%;
-  max-width: 35rem;
+  width: 90%;
+  max-width: 490px;
+  height: auto;
   margin-top: 0.8rem;
   -webkit-box-shadow: 3px 3px 6px #535353;
           box-shadow: 3px 3px 6px #535353;
@@ -277,11 +210,13 @@ main img {
 }
 
 main .about {
-  width: 100%;
-  padding: 1rem;
+  width: 90%;
+  max-width: 40rem;
+  padding: 2rem 1rem;
   margin: 4rem auto 0 auto;
   text-align: center;
-  background: #fff;
+  background: linear-gradient(150deg, #f5f5f5, #e0e0e0);
+  border-radius: 0.5rem;
 }
 
 main .about p {
@@ -312,11 +247,13 @@ footer {
 }
 
 footer * {
-  color: #fff;
+  color: #e0e0e0;
 }
 
 footer p {
   font-weight: 400;
+  -webkit-text-decoration: 4px underline #f79543;
+          text-decoration: 4px underline #f79543;
 }
 
 footer p .strong {
@@ -330,8 +267,12 @@ footer ul {
 
 footer li {
   list-style: none;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+footer .social {
+  text-align: center;
 }
 
 footer .social img {
@@ -342,85 +283,25 @@ footer .social img {
 }
 
 @media (min-width: 40rem) {
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0;
-    padding: 1rem;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .intro {
-    margin-top: 0.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: left;
-  }
-  header .intro h1 {
-    font-size: 3rem;
-  }
-  header .intro h1::before,
-  header .intro h1::after {
-    left: 0;
-    height: 40%;
-  }
-  header .intro h1::before {
-    top: 0.2rem;
-    width: 105%;
-  }
-  header .intro h1::after {
-    bottom: 0.4rem;
-    width: 75%;
-  }
-  header .intro .cta1 {
-    margin-left: 0;
-  }
-  main article {
-    width: 100%;
-    margin: 2.4rem auto;
-    border: 0px solid #dfdfdf;
-    padding: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-radius: 0.5rem;
-    background: #fff;
+  header h1 {
+    font-size: 7vw;
+    line-height: 8vw;
   }
 }
 
-@media (min-width: 715px) {
-  header .puerta__blindada {
-    display: inline-block;
-    max-width: 35%;
-  }
-}
-
-@media (min-width: 785px) {
-  * {
+@media (min-width: 56rem) {
+  html {
     font-size: 16px;
   }
   main article:hover img {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  .cta1:hover .logo__whatsapp {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
+  .cta1:hover {
+    background-color: #fff;
+  }
+  .cta1:hover * {
+    color: #050505;
+    font-weight: 500;
   }
 }
