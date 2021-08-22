@@ -301,15 +301,8 @@ footer .social img {
 
 @media (min-width: 40rem) {
   header h1 {
-    font-size: 7vw;
-    line-height: 8vw;
-  }
-}
-
-@media (min-width: 97rem) {
-  header h1 {
-    font-size: 9rem;
-    line-height: 10rem;
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }
 
