@@ -211,7 +211,7 @@ main img {
 
 main .about {
   width: 90%;
-  max-width: 40rem;
+  max-width: 30rem;
   padding: 2rem 1rem;
   margin: 4rem auto 0 auto;
   text-align: center;
@@ -219,14 +219,19 @@ main .about {
   border-radius: 0.5rem;
 }
 
-main .about p {
-  line-height: 2rem;
+main .about .social__link a {
+  color: blue;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0rem 1rem;
 }
 
-.margin__whatsapp {
-  margin: 0 0 0 1rem;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+main .about .social__link a:hover, main .about .social__link a:visited, main .about .social__link a:active {
+  text-decoration: underline;
+}
+
+main .about p {
+  line-height: 2rem;
 }
 
 footer {
