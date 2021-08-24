@@ -51,7 +51,6 @@ nav .logo .strong {
 
 header {
   margin: 0 auto;
-  padding: 4rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,14 +58,22 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 3rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: linear-gradient(150deg, #f5f5f5, #e0e0e0);
   width: 100%;
+  min-height: 80vh;
   text-align: center;
 }
 
 header h1 {
-  font-size: 12vw;
-  line-height: 12.5vw;
+  font-size: 4rem;
+  line-height: 3.8rem;
   font-weight: 800;
 }
 
